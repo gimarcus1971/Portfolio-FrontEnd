@@ -1,0 +1,36 @@
+/*CSS Generales*/
+body {
+    margin: 0%;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    color: white;
+    text-shadow: black;
+
+}
+
+div > h6 {
+        writing-mode: sideways-lr;
+        text-orientation: upright;
+}
+
+.progress {
+    height: 35px;
+}
+
+/*CSS icono Fullsatck*/
+.iconos {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    width: 20%;
+    height:auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

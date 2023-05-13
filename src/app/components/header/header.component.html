@@ -1,0 +1,47 @@
+<!--Header-->
+
+        <div class="container">
+                <div class="navbar">
+
+                    <div class="">
+                        <img style="height: 70px;width: 190px;" src="../assets/arg-prog (2).png" />
+                    </div>
+
+                    <div class="">
+                        <h6 class="" style="color:black" >#YoProgramo</h6>
+                    </div>
+
+                    <div class="">
+                    </div>
+
+                    <div>
+
+                            <li class="list-inline-item"><a href="#" class="social-link"><i
+                                        class="fab fa-facebook-f fa-lg" style="color: #3b5998;"></i></a>
+                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter fa-lg"
+                                        style="color: #55acee;"></i></a>
+                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-github fa-lg"
+                                        style="color: #333333;"></i></a>
+                            <li class="list-inline-item"><a href="#" class="social-link"><i
+                                        class="fab fa-stack-overflow fa-lg" style="color: #ffac44;"></i></a>
+                            <li class="list-inline-item"><a href="#" class="social-link"><i
+                                        class="fab fa-linkedin-in fa-lg" style="color: #0082ca;"></i></a>
+
+                    </div>
+
+                    <div class="">
+
+                        <button type="submit" class="btn btn-secondary" (click)="login()"
+                        *ngIf="!isLogged">Login</button>
+
+
+                      <button type="submit" class="btn btn-secondary" (click)="onLogOut()"
+                        *ngIf="isLogged">Logout</button>
+
+                    </div>
+
+                </div>
+
+        </div>
+
+

@@ -1,0 +1,12 @@
+.skills {
+    background-color:antiquewhite;
+    display: flex;
+    align-items: center;
+    color: black;
+    margin: 0%;
+    width: 100%;
+}
+
+.progress {
+    height: 35px;
+}

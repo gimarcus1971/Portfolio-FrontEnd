@@ -1,0 +1,48 @@
+
+<!--Educación-->
+<section class="container">
+  <div class="">
+  <div class="row card educacion">
+
+      <div class="row card-body">
+          <h5>Educacion</h5>
+          <div class="col-lg-2">
+
+            <button *ngIf="isLogged" type="button" class="btn btn-primary"  routerLink="/nuevaedu" >
+              <i class="bi bi-pencil-fill"></i>   Agregar <br> Nueva Educacion</button>
+
+          </div>
+
+      </div>
+
+
+
+      <div class="col lg 1"></div>
+  <div class="col-lg-11">
+      <table class="table">
+
+          <tbody>
+              <tr *ngFor="let Educacion of educacion">
+                  <td>
+
+                    <div class="col-4"><img class="icono img-responsive" src="../assets/logo-utn.png" alt="...">
+                  </div>
+
+                      <h6>{{Educacion.nombreE}}</h6>
+                  </td>
+                  <td>{{Educacion.descripcionE}}</td>
+                  <td *ngIf="isLogged">
+                      <button class="btn btn-secondary" routerLink="/editedu/{{Educacion.id}}">
+                          <i class="bi bi-pencil-fill"></i> Editar Educacion</button>
+                  </td>
+                  <td *ngIf="isLogged">
+                      <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                          <i class="bi bi-trash-fill"></i> Borrar Educacion</button>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+
+

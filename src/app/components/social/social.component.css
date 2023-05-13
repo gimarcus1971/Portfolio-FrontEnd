@@ -1,0 +1,7 @@
+.social {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    color: black;
+    margin: 0%;
+}

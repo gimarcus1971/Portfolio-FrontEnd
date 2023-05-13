@@ -1,0 +1,8 @@
+/*CSS Navbar*/
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    background-color: rgb(255, 255, 255);
+    color: white;
+}
